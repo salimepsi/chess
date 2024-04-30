@@ -4,7 +4,6 @@ from Models.Report import Report
 class ReportController:
     def __init__(self):
         pass
-
     def players_alphabetical(self):
         """
         Charge la liste des joueurs et les trie par ordre alphabétique de nom puis de prénom.
@@ -16,8 +15,6 @@ class ReportController:
         players = report.load_players()
         sorted_players = sorted(players, key=lambda x: (x['last_name'], x['first_name']))
         return sorted_players
-
-
     def list_tournaments(self):
         """
         Charge et retourne la liste des tournois depuis le modèle de rapport.
@@ -50,10 +47,10 @@ class ReportController:
                     print("Veuillez choisir un numéro valide.")
             except ValueError:
                 print("Veuillez choisir un numéro valide.")
-
     def tournament_players_alphabetical(self):
         """
-        Charge la liste des joueurs pour un tournoi spécifique, triée par ordre alphabétique de nom puis de prénom.
+        Charge la liste des joueurs pour un tournoi spécifique, 
+        triée par ordre alphabétique de nom puis de prénom.
 
         Returns:
             list: Liste des joueurs du tournoi triés par ordre alphabétique.
@@ -62,7 +59,6 @@ class ReportController:
         players = tournament['player_list']
         sorted_players = sorted(players, key=lambda x: (x['last_name'], x['first_name']))
         return sorted_players
-
     def get_tournament_rounds_and_matches(self):
         """
         Sélectionne un tournoi et retourne son nom, la liste de ses tours et son ID.
@@ -72,11 +68,10 @@ class ReportController:
         """
         tournament = self.select_tournament_from_list()
         return tournament['name'], tournament['round_list'], tournament['id']
-
-
     def get_tournament_players_sorted(self, tournament_id):
         """
-        Charge et retourne la liste des joueurs pour un tournoi spécifié, triée par leur score en ordre décroissant.
+        Charge et retourne la liste des joueurs pour un tournoi spécifié, 
+        triée par leur score en ordre décroissant.
 
         Args:
             tournament_id (int): L'ID du tournoi dont on souhaite obtenir la liste des joueurs.
@@ -91,4 +86,3 @@ class ReportController:
             if tournament["id"] == tournament_id:
                 return sorted(tournament["player_list"], key=lambda x: x["score"], reverse=True)
         return []
-

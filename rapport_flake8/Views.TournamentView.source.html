@@ -6,7 +6,7 @@
       <link rel="stylesheet" href="styles.css">
    </head>
    <body>
-      <div id="masthead" class="sev-2"></div>
+      <div id="masthead" class="sev-1"></div>
       <div id="page">
          <h1>
             <a href="Views.TournamentView.report.html">
@@ -29,16 +29,7 @@
                class="code sev- "><tt><i>4</i> &nbsp;</tt>
             </div>
             <div id="l5"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E303
-                     </span>
-                     Too many blank lines (3)</li>
-               
-               </ul><tt><i>5</i> <span class="k">class</span> <span class="nc">TournamentView</span><span class="p">(</span><span class="n">View</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>5</i> <span class="k">class</span> <span class="nc">TournamentView</span><span class="p">(</span><span class="n">View</span><span class="p">):</span></tt>
             </div>
             <div id="l6"
                class="code sev- "><tt><i>6</i>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
@@ -68,16 +59,7 @@
                class="code sev- "><tt><i>14</i> &nbsp;</tt>
             </div>
             <div id="l15"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E303
-                     </span>
-                     Too many blank lines (2)</li>
-               
-               </ul><tt><i>15</i>     <span class="k">def</span> <span class="nf">get_tournament_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>15</i>     <span class="k">def</span> <span class="nf">get_tournament_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l16"
                class="code sev- "><tt><i>16</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
@@ -125,133 +107,112 @@
                class="code sev- "><tt><i>30</i> &nbsp;</tt>
             </div>
             <div id="l31"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (116 > 109 characters)</li>
-               
-               </ul><tt><i>31</i>         <span class="bp">self</span><span class="o">.</span><span class="n">rounds</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_valid_int_input</span><span class="p">(</span><span class="s2">&quot;Nombre de tours (optionnel, défaut à 4): &quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># IF EMPTY, SET TO 4</span></tt>
+               class="code sev- "><tt><i>31</i>         <span class="bp">self</span><span class="o">.</span><span class="n">rounds</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_valid_int_input</span><span class="p">(</span><span class="s2">&quot;Nombre de tours (optionnel, défaut à 4): &quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  </tt>
             </div>
             <div id="l32"
-               class="code sev- "><tt><i>32</i>         <span class="bp">self</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Description du tournoi (optionnel): &quot;</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>32</i>         <span class="c1"># IF EMPTY, SET TO 4</span></tt>
             </div>
             <div id="l33"
-               class="code sev- "><tt><i>33</i> &nbsp;</tt>
+               class="code sev- "><tt><i>33</i>         <span class="bp">self</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Description du tournoi (optionnel): &quot;</span><span class="p">)</span></tt>
             </div>
             <div id="l34"
-               class="code sev- "><tt><i>34</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">location</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_date</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_date</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">rounds</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">description</span></tt>
+               class="code sev- "><tt><i>34</i> &nbsp;</tt>
             </div>
             <div id="l35"
-               class="code sev- "><tt><i>35</i> &nbsp;</tt>
+               class="code sev- "><tt><i>35</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">location</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_date</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_date</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">rounds</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">description</span></tt>
             </div>
             <div id="l36"
-               class="code sev- "><tt><i>36</i>     <span class="k">def</span> <span class="nf">select_tournament</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tournaments</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>36</i> &nbsp;</tt>
             </div>
             <div id="l37"
-               class="code sev- "><tt><i>37</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>37</i>     <span class="k">def</span> <span class="nf">select_tournament</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tournaments</span><span class="p">):</span></tt>
             </div>
             <div id="l38"
-               class="code sev- "><tt><i>38</i> <span class="sd">        Affiche une liste de tournois existants et demande à l&#39;utilisateur d&#39;en sélectionner un.</span></tt>
+               class="code sev- "><tt><i>38</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
             </div>
             <div id="l39"
-               class="code sev- "><tt><i>39</i> &nbsp;</tt>
+               class="code sev- "><tt><i>39</i> <span class="sd">        Affiche une liste de tournois existants et demande à l&#39;utilisateur d&#39;en sélectionner un.</span></tt>
             </div>
             <div id="l40"
-               class="code sev- "><tt><i>40</i> <span class="sd">        Args:</span></tt>
+               class="code sev- "><tt><i>40</i> &nbsp;</tt>
             </div>
             <div id="l41"
-               class="code sev- "><tt><i>41</i> <span class="sd">            tournaments (list): Liste des tournois existants.</span></tt>
+               class="code sev- "><tt><i>41</i> <span class="sd">        Args:</span></tt>
             </div>
             <div id="l42"
-               class="code sev- "><tt><i>42</i> &nbsp;</tt>
+               class="code sev- "><tt><i>42</i> <span class="sd">            tournaments (list): Liste des tournois existants.</span></tt>
             </div>
             <div id="l43"
-               class="code sev- "><tt><i>43</i> <span class="sd">        Returns:</span></tt>
+               class="code sev- "><tt><i>43</i> &nbsp;</tt>
             </div>
             <div id="l44"
-               class="code sev- "><tt><i>44</i> <span class="sd">            int: ID du tournoi sélectionné.</span></tt>
+               class="code sev- "><tt><i>44</i> <span class="sd">        Returns:</span></tt>
             </div>
             <div id="l45"
-               class="code sev- "><tt><i>45</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>45</i> <span class="sd">            int: ID du tournoi sélectionné.</span></tt>
             </div>
             <div id="l46"
-               class="code sev- "><tt><i>46</i>         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Sélectionnez un tournoi : &quot;</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>46</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
             </div>
             <div id="l47"
-               class="code sev- "><tt><i>47</i>         <span class="n">tournaments_reversed</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">tournaments</span><span class="p">))</span></tt>
+               class="code sev- "><tt><i>47</i>         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Sélectionnez un tournoi : &quot;</span><span class="p">)</span></tt>
             </div>
             <div id="l48"
-               class="code sev- "><tt><i>48</i>         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">tournament</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tournaments_reversed</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>48</i>         <span class="n">tournaments_reversed</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">tournaments</span><span class="p">))</span></tt>
             </div>
             <div id="l49"
-               class="code sev- "><tt><i>49</i>             <span class="n">registered_players</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;player_list&#39;</span><span class="p">])</span></tt>
+               class="code sev- "><tt><i>49</i>         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">tournament</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tournaments_reversed</span><span class="p">):</span></tt>
             </div>
             <div id="l50"
-               class="code sev- "><tt><i>50</i>             <span class="nb">print</span><span class="p">(</span></tt>
+               class="code sev- "><tt><i>50</i>             <span class="n">registered_players</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;player_list&#39;</span><span class="p">])</span></tt>
             </div>
             <div id="l51"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (201 > 109 characters)</li>
-               
-               </ul><tt><i>51</i>                 <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> à </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> du </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;start_date&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> au </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;end_date&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> - Rounds: </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;rounds&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> - Inscrits: </span><span class="si">{</span><span class="n">registered_players</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>51</i>             <span class="nb">print</span><span class="p">(</span></tt>
             </div>
             <div id="l52"
-               class="code sev- "><tt><i>52</i>         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span></tt>
+               class="code sev-1  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-1">
+                        E999
+                     </span>
+                     SyntaxError: unterminated f-string literal (detected at line 52)</li>
+               
+               </ul><tt><i>52</i>                 <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> à </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> du </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;start_date&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> au </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;end_date&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> - </span></tt>
             </div>
             <div id="l53"
-               class="code sev- "><tt><i>53</i>             <span class="k">try</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>53</i>                 <span class="n">Rounds</span><span class="p">:</span> <span class="p">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;rounds&#39;</span><span class="p">]}</span> <span class="o">-</span> <span class="n">Inscrits</span><span class="p">:</span> <span class="p">{</span><span class="n">registered_players</span><span class="p">}</span><span class="s2">&quot;)</span></tt>
             </div>
             <div id="l54"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (114 > 109 characters)</li>
-               
-               </ul><tt><i>54</i>                 <span class="n">tournament_index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Entrez le numéro du tournoi que vous voulez sélectionner : &quot;</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span></tt>
+               class="code sev- "><tt><i>54</i>         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span></tt>
             </div>
             <div id="l55"
-               class="code sev- "><tt><i>55</i>                 <span class="k">if</span> <span class="n">tournament_index</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">tournament_index</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tournaments</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>55</i>             <span class="k">try</span><span class="p">:</span></tt>
             </div>
             <div id="l56"
-               class="code sev- "><tt><i>56</i>                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Numéro de tournoi invalide. Veuillez entrer un numéro de tournoi valide.&quot;</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>56</i>                 <span class="n">tournament_index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Entrez le numéro du tournoi que vous voulez sélectionner : &quot;</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span></tt>
             </div>
             <div id="l57"
-               class="code sev- "><tt><i>57</i>                 <span class="k">else</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>57</i>                 <span class="k">if</span> <span class="n">tournament_index</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">tournament_index</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tournaments</span><span class="p">):</span></tt>
             </div>
             <div id="l58"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (111 > 109 characters)</li>
-               
-               </ul><tt><i>58</i>                     <span class="c1"># On retourne l&#39;ID à ne pas confondre avec les options en affichage (pas les mêmes valeurs)</span></tt>
+               class="code sev- "><tt><i>58</i>                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Numéro de tournoi invalide. Veuillez entrer un numéro de tournoi valide.&quot;</span><span class="p">)</span></tt>
             </div>
             <div id="l59"
-               class="code sev- "><tt><i>59</i>                     <span class="k">return</span> <span class="n">tournaments_reversed</span><span class="p">[</span><span class="n">tournament_index</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span></tt>
+               class="code sev- "><tt><i>59</i>                 <span class="k">else</span><span class="p">:</span></tt>
             </div>
             <div id="l60"
-               class="code sev- "><tt><i>60</i>             <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>60</i>                     <span class="c1"># On retourne l&#39;ID à ne pas confondre avec les options en affichage (pas les mêmes valeurs)</span></tt>
             </div>
             <div id="l61"
-               class="code sev- "><tt><i>61</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entrée invalide. Veuillez entrer un numéro.&quot;</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>61</i>                     <span class="k">return</span> <span class="n">tournaments_reversed</span><span class="p">[</span><span class="n">tournament_index</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span></tt>
+            </div>
+            <div id="l62"
+               class="code sev- "><tt><i>62</i>             <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span></tt>
+            </div>
+            <div id="l63"
+               class="code sev- "><tt><i>63</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entrée invalide. Veuillez entrer un numéro.&quot;</span><span class="p">)</span></tt>
             </div>
             
          </div>

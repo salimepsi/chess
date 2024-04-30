@@ -62,7 +62,13 @@
                      </span>
                      Expected 1 blank line, found 0</li>
                
-               </ul><tt><i>13</i>     <span class="k">def</span> <span class="nf">add_player</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+                  <li>
+                     <span class="count sev-2">
+                        E211
+                     </span>
+                     Whitespace before '('</li>
+               
+               </ul><tt><i>13</i>     <span class="k">def</span> <span class="nf">add_player</span> <span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l14"
                class="code sev- "><tt><i>14</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
@@ -82,20 +88,23 @@
                
                   <li>
                      <span class="count sev-2">
-                        E501
+                        W291
                      </span>
-                     Line too long (116 > 109 characters)</li>
+                     Trailing whitespace</li>
                
-               </ul><tt><i>18</i>         <span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">birth_date</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">national_chess_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">playerView</span><span class="o">.</span><span class="n">get_player_info</span><span class="p">()</span></tt>
+               </ul><tt><i>18</i>         <span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="p">,</span> </tt>
             </div>
             <div id="l19"
-               class="code sev- "><tt><i>19</i>         <span class="bp">self</span><span class="o">.</span><span class="n">player</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">birth_date</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">national_chess_id</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>19</i>         <span class="bp">self</span><span class="o">.</span><span class="n">birth_date</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">national_chess_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">playerView</span><span class="o">.</span><span class="n">get_player_info</span><span class="p">()</span></tt>
             </div>
             <div id="l20"
-               class="code sev- "><tt><i>20</i>         <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">save_player</span><span class="p">()</span></tt>
+               class="code sev- "><tt><i>20</i>         <span class="bp">self</span><span class="o">.</span><span class="n">player</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">birth_date</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">national_chess_id</span><span class="p">)</span></tt>
             </div>
             <div id="l21"
-               class="code sev- "><tt><i>21</i>         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Joueur ajouté à la base de donnée avec succès !&quot;</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>21</i>         <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">save_player</span><span class="p">()</span></tt>
+            </div>
+            <div id="l22"
+               class="code sev- "><tt><i>22</i>         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Joueur ajouté à la base de donnée avec succès !&quot;</span><span class="p">)</span></tt>
             </div>
             
          </div>

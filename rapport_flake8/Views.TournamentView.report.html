@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function () {
 </script>
    </head>
    <body>
-      <div id="masthead" class="sev-2"></div>
+      <div id="masthead" class="sev-1"></div>
       <div id="page">
          <p id="srclink">
             <a title="View full annotated source"
@@ -50,72 +50,18 @@ window.addEventListener('DOMContentLoaded', function () {
          <ul id="index">
          
          <li>
-            <a data-code="E501">
-               <span class="count sev-2">
-                  4
+            <a data-code="E999">
+               <span class="count sev-1">
+                  1
                </span>
-               <strong>E501:</strong> line too long (116 > 109 characters)
-               
-                  (and 3 similar)
+               <strong>E999:</strong> SyntaxError: unterminated f-string literal (detected at line 52)
                
             </a>
             <ul class="details">
             <li>
                
-               <p>Line too long (116 > 109 characters):</p>
-               
-               <a href="Views.TournamentView.source.html#l31">
-                  <tt><i>31</i>         <span class="bp">self</span><span class="o">.</span><span class="n">rounds</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_valid_int_input</span><span class="p">(</span><span class="s2">&quot;Nombre de tours (optionnel, défaut à 4): &quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># IF EMPTY, SET TO 4</span></tt>
-               </a>
-            </li><li>
-               
-               <p>Line too long (201 > 109 characters):</p>
-               
-               <a href="Views.TournamentView.source.html#l51">
-                  <tt><i>51</i>                 <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> à </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> du </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;start_date&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> au </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;end_date&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> - Rounds: </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;rounds&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> - Inscrits: </span><span class="si">{</span><span class="n">registered_players</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></tt>
-               </a>
-            </li><li>
-               
-               <p>Line too long (114 > 109 characters):</p>
-               
-               <a href="Views.TournamentView.source.html#l54">
-                  <tt><i>54</i>                 <span class="n">tournament_index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Entrez le numéro du tournoi que vous voulez sélectionner : &quot;</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span></tt>
-               </a>
-            </li><li>
-               
-               <p>Line too long (111 > 109 characters):</p>
-               
-               <a href="Views.TournamentView.source.html#l58">
-                  <tt><i>58</i>                     <span class="c1"># On retourne l&#39;ID à ne pas confondre avec les options en affichage (pas les mêmes valeurs)</span></tt>
-               </a>
-            </li>
-            </ul>
-         </li>
-         
-         <li>
-            <a data-code="E303">
-               <span class="count sev-2">
-                  2
-               </span>
-               <strong>E303:</strong> too many blank lines (3)
-               
-                  (and 1 similar)
-               
-            </a>
-            <ul class="details">
-            <li>
-               
-               <p>Too many blank lines (3):</p>
-               
-               <a href="Views.TournamentView.source.html#l5">
-                  <tt><i>5</i> <span class="k">class</span> <span class="nc">TournamentView</span><span class="p">(</span><span class="n">View</span><span class="p">):</span></tt>
-               </a>
-            </li><li>
-               
-               <p>Too many blank lines (2):</p>
-               
-               <a href="Views.TournamentView.source.html#l15">
-                  <tt><i>15</i>     <span class="k">def</span> <span class="nf">get_tournament_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               <a href="Views.TournamentView.source.html#l52">
+                  <tt><i>52</i>                 <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> à </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> du </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;start_date&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> au </span><span class="si">{</span><span class="n">tournament</span><span class="p">[</span><span class="s1">&#39;end_date&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> - </span></tt>
                </a>
             </li>
             </ul>

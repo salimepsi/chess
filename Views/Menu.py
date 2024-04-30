@@ -6,11 +6,8 @@ class Menu:
         self.choice = None
 
     def main_menu(self):
-        
-        
         """
         Affiche le menu principal du gestionnaire de tournois d'échecs.
-
         Returns:
             str: Le choix de l'utilisateur pour le menu principal.
         """

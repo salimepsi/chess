@@ -166,98 +166,101 @@
                
                   <li>
                      <span class="count sev-2">
-                        E501
+                        W291
                      </span>
-                     Line too long (110 > 109 characters)</li>
+                     Trailing whitespace</li>
                
-               </ul><tt><i>49</i> <span class="sd">        Gère le choix de l&#39;utilisateur dans le sous-menu des rapports et appelle les méthodes correspondantes.</span></tt>
+               </ul><tt><i>49</i> <span class="sd">        Gère le choix de l&#39;utilisateur dans le sous-menu des rapports et appelle </span></tt>
             </div>
             <div id="l50"
-               class="code sev- "><tt><i>50</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>50</i> <span class="sd">        les méthodes correspondantes.</span></tt>
             </div>
             <div id="l51"
-               class="code sev- "><tt><i>51</i>         <span class="n">choice</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">menu</span><span class="o">.</span><span class="n">report_menu</span><span class="p">()</span></tt>
+               class="code sev- "><tt><i>51</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
             </div>
             <div id="l52"
-               class="code sev- "><tt><i>52</i> &nbsp;</tt>
+               class="code sev- "><tt><i>52</i>         <span class="n">choice</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">menu</span><span class="o">.</span><span class="n">report_menu</span><span class="p">()</span></tt>
             </div>
             <div id="l53"
-               class="code sev- "><tt><i>53</i>         <span class="k">match</span> <span class="n">choice</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>53</i> &nbsp;</tt>
             </div>
             <div id="l54"
-               class="code sev- "><tt><i>54</i>             <span class="k">case</span> <span class="s1">&#39;1&#39;</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>54</i>         <span class="k">match</span> <span class="n">choice</span><span class="p">:</span></tt>
             </div>
             <div id="l55"
-               class="code sev- "><tt><i>55</i>                 <span class="n">players</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report_controller</span><span class="o">.</span><span class="n">players_alphabetical</span><span class="p">()</span></tt>
+               class="code sev- "><tt><i>55</i>             <span class="k">case</span> <span class="s1">&#39;1&#39;</span><span class="p">:</span></tt>
             </div>
             <div id="l56"
-               class="code sev- "><tt><i>56</i>                 <span class="bp">self</span><span class="o">.</span><span class="n">report_view</span><span class="o">.</span><span class="n">display_players_alphabetical</span><span class="p">(</span><span class="n">players</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>56</i>                 <span class="n">players</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report_controller</span><span class="o">.</span><span class="n">players_alphabetical</span><span class="p">()</span></tt>
             </div>
             <div id="l57"
-               class="code sev- "><tt><i>57</i>             <span class="k">case</span> <span class="s1">&#39;2&#39;</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>57</i>                 <span class="bp">self</span><span class="o">.</span><span class="n">report_view</span><span class="o">.</span><span class="n">display_players_alphabetical</span><span class="p">(</span><span class="n">players</span><span class="p">)</span></tt>
             </div>
             <div id="l58"
-               class="code sev- "><tt><i>58</i>                 <span class="n">tournaments</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report_controller</span><span class="o">.</span><span class="n">list_tournaments</span><span class="p">()</span></tt>
+               class="code sev- "><tt><i>58</i>             <span class="k">case</span> <span class="s1">&#39;2&#39;</span><span class="p">:</span></tt>
             </div>
             <div id="l59"
-               class="code sev- "><tt><i>59</i>                 <span class="bp">self</span><span class="o">.</span><span class="n">report_view</span><span class="o">.</span><span class="n">display_tournaments</span><span class="p">(</span><span class="n">tournaments</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>59</i>                 <span class="n">tournaments</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report_controller</span><span class="o">.</span><span class="n">list_tournaments</span><span class="p">()</span></tt>
             </div>
             <div id="l60"
-               class="code sev- "><tt><i>60</i>             <span class="k">case</span> <span class="s1">&#39;3&#39;</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>60</i>                 <span class="bp">self</span><span class="o">.</span><span class="n">report_view</span><span class="o">.</span><span class="n">display_tournaments</span><span class="p">(</span><span class="n">tournaments</span><span class="p">)</span></tt>
             </div>
             <div id="l61"
-               class="code sev- "><tt><i>61</i>                 <span class="n">selected_tournament</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report_controller</span><span class="o">.</span><span class="n">select_tournament_from_list</span><span class="p">()</span></tt>
+               class="code sev- "><tt><i>61</i>             <span class="k">case</span> <span class="s1">&#39;3&#39;</span><span class="p">:</span></tt>
             </div>
             <div id="l62"
-               class="code sev- "><tt><i>62</i>                 <span class="bp">self</span><span class="o">.</span><span class="n">report_view</span><span class="o">.</span><span class="n">display_tournament_infos</span><span class="p">(</span><span class="n">selected_tournament</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>62</i>                 <span class="n">selected_tournament</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report_controller</span><span class="o">.</span><span class="n">select_tournament_from_list</span><span class="p">()</span></tt>
             </div>
             <div id="l63"
-               class="code sev- "><tt><i>63</i>             <span class="k">case</span> <span class="s1">&#39;4&#39;</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>63</i>                 <span class="bp">self</span><span class="o">.</span><span class="n">report_view</span><span class="o">.</span><span class="n">display_tournament_infos</span><span class="p">(</span><span class="n">selected_tournament</span><span class="p">)</span></tt>
             </div>
             <div id="l64"
-               class="code sev- "><tt><i>64</i>                 <span class="n">players</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report_controller</span><span class="o">.</span><span class="n">tournament_players_alphabetical</span><span class="p">()</span></tt>
+               class="code sev- "><tt><i>64</i>             <span class="k">case</span> <span class="s1">&#39;4&#39;</span><span class="p">:</span></tt>
             </div>
             <div id="l65"
-               class="code sev- "><tt><i>65</i>                 <span class="bp">self</span><span class="o">.</span><span class="n">report_view</span><span class="o">.</span><span class="n">display_tournament_players_alphabetical</span><span class="p">(</span><span class="n">players</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>65</i>                 <span class="n">players</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report_controller</span><span class="o">.</span><span class="n">tournament_players_alphabetical</span><span class="p">()</span></tt>
             </div>
             <div id="l66"
-               class="code sev- "><tt><i>66</i>             <span class="k">case</span> <span class="s1">&#39;5&#39;</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>66</i>                 <span class="bp">self</span><span class="o">.</span><span class="n">report_view</span><span class="o">.</span><span class="n">display_tournament_players_alphabetical</span><span class="p">(</span><span class="n">players</span><span class="p">)</span></tt>
             </div>
             <div id="l67"
-               class="code sev- "><tt><i>67</i>                 <span class="p">(</span><span class="n">tournament_name</span><span class="p">,</span></tt>
+               class="code sev- "><tt><i>67</i>             <span class="k">case</span> <span class="s1">&#39;5&#39;</span><span class="p">:</span></tt>
             </div>
             <div id="l68"
-               class="code sev- "><tt><i>68</i>                  <span class="n">rounds_list</span><span class="p">,</span></tt>
+               class="code sev- "><tt><i>68</i>                 <span class="p">(</span><span class="n">tournament_name</span><span class="p">,</span></tt>
             </div>
             <div id="l69"
-               class="code sev- "><tt><i>69</i>                  <span class="n">tournament_id</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span></tt>
+               class="code sev- "><tt><i>69</i>                  <span class="n">rounds_list</span><span class="p">,</span></tt>
             </div>
             <div id="l70"
-               class="code sev- "><tt><i>70</i>                     <span class="bp">self</span><span class="o">.</span><span class="n">report_controller</span><span class="o">.</span><span class="n">get_tournament_rounds_and_matches</span><span class="p">())</span></tt>
+               class="code sev- "><tt><i>70</i>                  <span class="n">tournament_id</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span></tt>
             </div>
             <div id="l71"
-               class="code sev- "><tt><i>71</i>                 <span class="n">players_sorted</span> <span class="o">=</span> <span class="p">(</span></tt>
+               class="code sev- "><tt><i>71</i>                     <span class="bp">self</span><span class="o">.</span><span class="n">report_controller</span><span class="o">.</span><span class="n">get_tournament_rounds_and_matches</span><span class="p">())</span></tt>
             </div>
             <div id="l72"
-               class="code sev- "><tt><i>72</i>                     <span class="bp">self</span><span class="o">.</span><span class="n">report_controller</span><span class="o">.</span><span class="n">get_tournament_players_sorted</span><span class="p">(</span><span class="n">tournament_id</span><span class="p">))</span></tt>
+               class="code sev- "><tt><i>72</i>                 <span class="n">players_sorted</span> <span class="o">=</span> <span class="p">(</span></tt>
             </div>
             <div id="l73"
-               class="code sev- "><tt><i>73</i>                 <span class="bp">self</span><span class="o">.</span><span class="n">report_view</span><span class="o">.</span><span class="n">display_rounds_and_matches</span><span class="p">(</span><span class="n">tournament_name</span><span class="p">,</span> <span class="n">rounds_list</span><span class="p">,</span> <span class="n">players_sorted</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>73</i>                     <span class="bp">self</span><span class="o">.</span><span class="n">report_controller</span><span class="o">.</span><span class="n">get_tournament_players_sorted</span><span class="p">(</span><span class="n">tournament_id</span><span class="p">))</span></tt>
             </div>
             <div id="l74"
-               class="code sev- "><tt><i>74</i>             <span class="k">case</span> <span class="s1">&#39;0&#39;</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>74</i>                 <span class="bp">self</span><span class="o">.</span><span class="n">report_view</span><span class="o">.</span><span class="n">display_rounds_and_matches</span><span class="p">(</span><span class="n">tournament_name</span><span class="p">,</span> <span class="n">rounds_list</span><span class="p">,</span> <span class="n">players_sorted</span><span class="p">)</span></tt>
             </div>
             <div id="l75"
-               class="code sev- "><tt><i>75</i>                 <span class="k">return</span>  <span class="c1"># MAIN MENU</span></tt>
+               class="code sev- "><tt><i>75</i>             <span class="k">case</span> <span class="s1">&#39;0&#39;</span><span class="p">:</span></tt>
             </div>
             <div id="l76"
-               class="code sev- "><tt><i>76</i>             <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>76</i>                 <span class="k">return</span>  <span class="c1"># MAIN MENU</span></tt>
             </div>
             <div id="l77"
-               class="code sev- "><tt><i>77</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Choix non valide. Veuillez entrer un chiffre valide.&quot;</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>77</i>             <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span></tt>
             </div>
             <div id="l78"
-               class="code sev- "><tt><i>78</i>                 <span class="bp">self</span><span class="o">.</span><span class="n">report_menu_choice</span><span class="p">()</span></tt>
+               class="code sev- "><tt><i>78</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Choix non valide. Veuillez entrer un chiffre valide.&quot;</span><span class="p">)</span></tt>
+            </div>
+            <div id="l79"
+               class="code sev- "><tt><i>79</i>                 <span class="bp">self</span><span class="o">.</span><span class="n">report_menu_choice</span><span class="p">()</span></tt>
             </div>
             
          </div>

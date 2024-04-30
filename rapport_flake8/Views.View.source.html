@@ -115,263 +115,275 @@
                
                   <li>
                      <span class="count sev-2">
-                        E501
+                        W291
                      </span>
-                     Line too long (117 > 109 characters)</li>
+                     Trailing whitespace</li>
                
-               </ul><tt><i>32</i> <span class="sd">        Vérifie si la chaîne de caractères fournie contient uniquement des caractères alphabétiques (et des espaces).</span></tt>
+               </ul><tt><i>32</i> <span class="sd">        Vérifie si la chaîne de caractères fournie contient uniquement </span></tt>
             </div>
             <div id="l33"
-               class="code sev- "><tt><i>33</i> &nbsp;</tt>
+               class="code sev- "><tt><i>33</i> <span class="sd">        des caractères alphabétiques (et des espaces).</span></tt>
             </div>
             <div id="l34"
-               class="code sev- "><tt><i>34</i> <span class="sd">        Args:</span></tt>
+               class="code sev- "><tt><i>34</i> &nbsp;</tt>
             </div>
             <div id="l35"
-               class="code sev- "><tt><i>35</i> <span class="sd">            input_string (str): Chaîne de caractères à vérifier.</span></tt>
+               class="code sev- "><tt><i>35</i> <span class="sd">        Args:</span></tt>
             </div>
             <div id="l36"
-               class="code sev- "><tt><i>36</i> &nbsp;</tt>
+               class="code sev- "><tt><i>36</i> <span class="sd">            input_string (str): Chaîne de caractères à vérifier.</span></tt>
             </div>
             <div id="l37"
-               class="code sev- "><tt><i>37</i> <span class="sd">        Returns:</span></tt>
+               class="code sev- "><tt><i>37</i> &nbsp;</tt>
             </div>
             <div id="l38"
-               class="code sev- "><tt><i>38</i> <span class="sd">            bool: True si la chaîne est valide, sinon False.</span></tt>
+               class="code sev- "><tt><i>38</i> <span class="sd">        Returns:</span></tt>
             </div>
             <div id="l39"
-               class="code sev- "><tt><i>39</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>39</i> <span class="sd">            bool: True si la chaîne est valide, sinon False.</span></tt>
             </div>
             <div id="l40"
-               class="code sev- "><tt><i>40</i>         <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[A-Za-zÀ-ÖØ-öø-ÿ\s]{2,}&#39;</span><span class="p">,</span> <span class="n">input_string</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span></tt>
+               class="code sev- "><tt><i>40</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
             </div>
             <div id="l41"
-               class="code sev- "><tt><i>41</i> &nbsp;</tt>
+               class="code sev- "><tt><i>41</i>         <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[A-Za-zÀ-ÖØ-öø-ÿ\s]{2,}&#39;</span><span class="p">,</span> <span class="n">input_string</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span></tt>
             </div>
             <div id="l42"
-               class="code sev- "><tt><i>42</i>     <span class="k">def</span> <span class="nf">is_valid_int</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_string</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>42</i> &nbsp;</tt>
             </div>
             <div id="l43"
-               class="code sev- "><tt><i>43</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>43</i>     <span class="k">def</span> <span class="nf">is_valid_int</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_string</span><span class="p">):</span></tt>
             </div>
             <div id="l44"
-               class="code sev- "><tt><i>44</i> <span class="sd">        Vérifie si la chaîne de caractères fournie représente un entier valide.</span></tt>
+               class="code sev- "><tt><i>44</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
             </div>
             <div id="l45"
-               class="code sev- "><tt><i>45</i> &nbsp;</tt>
+               class="code sev- "><tt><i>45</i> <span class="sd">        Vérifie si la chaîne de caractères fournie représente un entier valide.</span></tt>
             </div>
             <div id="l46"
-               class="code sev- "><tt><i>46</i> <span class="sd">        Args:</span></tt>
+               class="code sev- "><tt><i>46</i> &nbsp;</tt>
             </div>
             <div id="l47"
-               class="code sev- "><tt><i>47</i> <span class="sd">            input_string (str): Chaîne de caractères à vérifier.</span></tt>
+               class="code sev- "><tt><i>47</i> <span class="sd">        Args:</span></tt>
             </div>
             <div id="l48"
-               class="code sev- "><tt><i>48</i> &nbsp;</tt>
+               class="code sev- "><tt><i>48</i> <span class="sd">            input_string (str): Chaîne de caractères à vérifier.</span></tt>
             </div>
             <div id="l49"
-               class="code sev- "><tt><i>49</i> <span class="sd">        Returns:</span></tt>
+               class="code sev- "><tt><i>49</i> &nbsp;</tt>
             </div>
             <div id="l50"
-               class="code sev- "><tt><i>50</i> <span class="sd">            bool: True si la chaîne représente un entier valide, sinon False.</span></tt>
+               class="code sev- "><tt><i>50</i> <span class="sd">        Returns:</span></tt>
             </div>
             <div id="l51"
-               class="code sev- "><tt><i>51</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>51</i> <span class="sd">            bool: True si la chaîne représente un entier valide, sinon False.</span></tt>
             </div>
             <div id="l52"
-               class="code sev- "><tt><i>52</i>         <span class="k">return</span> <span class="n">input_string</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span></tt>
+               class="code sev- "><tt><i>52</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
             </div>
             <div id="l53"
-               class="code sev- "><tt><i>53</i> &nbsp;</tt>
+               class="code sev- "><tt><i>53</i>         <span class="k">return</span> <span class="n">input_string</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span></tt>
             </div>
             <div id="l54"
-               class="code sev- "><tt><i>54</i>     <span class="k">def</span> <span class="nf">get_valid_date_input</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prompt</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>54</i> &nbsp;</tt>
             </div>
             <div id="l55"
-               class="code sev- "><tt><i>55</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>55</i>     <span class="k">def</span> <span class="nf">get_valid_date_input</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prompt</span><span class="p">):</span></tt>
             </div>
             <div id="l56"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (116 > 109 characters)</li>
-               
-               </ul><tt><i>56</i> <span class="sd">        Demande à l&#39;utilisateur d&#39;entrer une date au format JJ/MM/AAAA jusqu&#39;à ce qu&#39;une entrée valide soit fournie.</span></tt>
+               class="code sev- "><tt><i>56</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
             </div>
             <div id="l57"
-               class="code sev- "><tt><i>57</i> &nbsp;</tt>
-            </div>
-            <div id="l58"
-               class="code sev- "><tt><i>58</i> <span class="sd">        Args:</span></tt>
-            </div>
-            <div id="l59"
-               class="code sev- "><tt><i>59</i> <span class="sd">            prompt (str): L&#39;invite affichée à l&#39;utilisateur.</span></tt>
-            </div>
-            <div id="l60"
-               class="code sev- "><tt><i>60</i> &nbsp;</tt>
-            </div>
-            <div id="l61"
-               class="code sev- "><tt><i>61</i> <span class="sd">        Returns:</span></tt>
-            </div>
-            <div id="l62"
-               class="code sev- "><tt><i>62</i> <span class="sd">            str: Date valide entrée par l&#39;utilisateur.</span></tt>
-            </div>
-            <div id="l63"
-               class="code sev- "><tt><i>63</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
-            </div>
-            <div id="l64"
-               class="code sev- "><tt><i>64</i>         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span></tt>
-            </div>
-            <div id="l65"
-               class="code sev- "><tt><i>65</i>             <span class="n">date</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span></tt>
-            </div>
-            <div id="l66"
-               class="code sev- "><tt><i>66</i>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_valid_date</span><span class="p">(</span><span class="n">date</span><span class="p">):</span></tt>
-            </div>
-            <div id="l67"
-               class="code sev- "><tt><i>67</i>                 <span class="k">return</span> <span class="n">date</span></tt>
-            </div>
-            <div id="l68"
-               class="code sev- "><tt><i>68</i>             <span class="k">else</span><span class="p">:</span></tt>
-            </div>
-            <div id="l69"
-               class="code sev- "><tt><i>69</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Date invalide. Réessayez.&quot;</span><span class="p">)</span></tt>
-            </div>
-            <div id="l70"
-               class="code sev- "><tt><i>70</i> &nbsp;</tt>
-            </div>
-            <div id="l71"
-               class="code sev- "><tt><i>71</i>     <span class="k">def</span> <span class="nf">get_valid_alpha_input</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prompt</span><span class="p">):</span></tt>
-            </div>
-            <div id="l72"
-               class="code sev- "><tt><i>72</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
-            </div>
-            <div id="l73"
                class="code sev-2  le">
                <ul class="violations">
                
                   <li>
                      <span class="count sev-2">
-                        E501
+                        W291
                      </span>
-                     Line too long (110 > 109 characters)</li>
+                     Trailing whitespace</li>
                
-               </ul><tt><i>73</i> <span class="sd">        Demande à l&#39;utilisateur d&#39;entrer une chaîne alphabétique jusqu&#39;à ce qu&#39;une entrée valide soit fournie.</span></tt>
+               </ul><tt><i>57</i> <span class="sd">        Demande à l&#39;utilisateur d&#39;entrer une date au format JJ/MM/AAAA </span></tt>
+            </div>
+            <div id="l58"
+               class="code sev- "><tt><i>58</i> <span class="sd">        jusqu&#39;à ce qu&#39;une entrée valide soit fournie.</span></tt>
+            </div>
+            <div id="l59"
+               class="code sev- "><tt><i>59</i> &nbsp;</tt>
+            </div>
+            <div id="l60"
+               class="code sev- "><tt><i>60</i> <span class="sd">        Args:</span></tt>
+            </div>
+            <div id="l61"
+               class="code sev- "><tt><i>61</i> <span class="sd">            prompt (str): L&#39;invite affichée à l&#39;utilisateur.</span></tt>
+            </div>
+            <div id="l62"
+               class="code sev- "><tt><i>62</i> &nbsp;</tt>
+            </div>
+            <div id="l63"
+               class="code sev- "><tt><i>63</i> <span class="sd">        Returns:</span></tt>
+            </div>
+            <div id="l64"
+               class="code sev- "><tt><i>64</i> <span class="sd">            str: Date valide entrée par l&#39;utilisateur.</span></tt>
+            </div>
+            <div id="l65"
+               class="code sev- "><tt><i>65</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l66"
+               class="code sev- "><tt><i>66</i>         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span></tt>
+            </div>
+            <div id="l67"
+               class="code sev- "><tt><i>67</i>             <span class="n">date</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span></tt>
+            </div>
+            <div id="l68"
+               class="code sev- "><tt><i>68</i>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_valid_date</span><span class="p">(</span><span class="n">date</span><span class="p">):</span></tt>
+            </div>
+            <div id="l69"
+               class="code sev- "><tt><i>69</i>                 <span class="k">return</span> <span class="n">date</span></tt>
+            </div>
+            <div id="l70"
+               class="code sev- "><tt><i>70</i>             <span class="k">else</span><span class="p">:</span></tt>
+            </div>
+            <div id="l71"
+               class="code sev- "><tt><i>71</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Date invalide. Réessayez.&quot;</span><span class="p">)</span></tt>
+            </div>
+            <div id="l72"
+               class="code sev- "><tt><i>72</i> &nbsp;</tt>
+            </div>
+            <div id="l73"
+               class="code sev- "><tt><i>73</i>     <span class="k">def</span> <span class="nf">get_valid_alpha_input</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prompt</span><span class="p">):</span></tt>
             </div>
             <div id="l74"
-               class="code sev- "><tt><i>74</i> &nbsp;</tt>
+               class="code sev- "><tt><i>74</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
             </div>
             <div id="l75"
-               class="code sev- "><tt><i>75</i> <span class="sd">        Args:</span></tt>
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>75</i> <span class="sd">        Demande à l&#39;utilisateur d&#39;entrer une chaîne alphabétique jusqu&#39;à </span></tt>
             </div>
             <div id="l76"
-               class="code sev- "><tt><i>76</i> <span class="sd">            prompt (str): L&#39;invite affichée à l&#39;utilisateur.</span></tt>
+               class="code sev- "><tt><i>76</i> <span class="sd">        ce qu&#39;une entrée valide soit fournie.</span></tt>
             </div>
             <div id="l77"
                class="code sev- "><tt><i>77</i> &nbsp;</tt>
             </div>
             <div id="l78"
-               class="code sev- "><tt><i>78</i> <span class="sd">        Returns:</span></tt>
+               class="code sev- "><tt><i>78</i> <span class="sd">        Args:</span></tt>
             </div>
             <div id="l79"
-               class="code sev- "><tt><i>79</i> <span class="sd">            str: Chaîne alphabétique valide entrée par l&#39;utilisateur.</span></tt>
+               class="code sev- "><tt><i>79</i> <span class="sd">            prompt (str): L&#39;invite affichée à l&#39;utilisateur.</span></tt>
             </div>
             <div id="l80"
-               class="code sev- "><tt><i>80</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>80</i> &nbsp;</tt>
             </div>
             <div id="l81"
-               class="code sev- "><tt><i>81</i>         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>81</i> <span class="sd">        Returns:</span></tt>
             </div>
             <div id="l82"
-               class="code sev- "><tt><i>82</i>             <span class="n">input_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>82</i> <span class="sd">            str: Chaîne alphabétique valide entrée par l&#39;utilisateur.</span></tt>
             </div>
             <div id="l83"
-               class="code sev- "><tt><i>83</i>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_valid_alpha</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>83</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
             </div>
             <div id="l84"
-               class="code sev- "><tt><i>84</i>                 <span class="k">return</span> <span class="n">input_string</span></tt>
+               class="code sev- "><tt><i>84</i>         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span></tt>
             </div>
             <div id="l85"
-               class="code sev- "><tt><i>85</i>             <span class="k">else</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>85</i>             <span class="n">input_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span></tt>
             </div>
             <div id="l86"
-               class="code sev- "><tt><i>86</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entrée invalide. Réessayez avec au moins deux caractères alphabétiques.&quot;</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>86</i>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_valid_alpha</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span></tt>
             </div>
             <div id="l87"
-               class="code sev- "><tt><i>87</i> &nbsp;</tt>
+               class="code sev- "><tt><i>87</i>                 <span class="k">return</span> <span class="n">input_string</span></tt>
             </div>
             <div id="l88"
-               class="code sev- "><tt><i>88</i>     <span class="k">def</span> <span class="nf">get_valid_int_input</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prompt</span><span class="p">,</span> <span class="n">default_value</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>88</i>             <span class="k">else</span><span class="p">:</span></tt>
             </div>
             <div id="l89"
-               class="code sev- "><tt><i>89</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>89</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entrée invalide. Réessayez avec au moins deux caractères alphabétiques.&quot;</span><span class="p">)</span></tt>
             </div>
             <div id="l90"
-               class="code sev- "><tt><i>90</i> <span class="sd">        Demande à l&#39;utilisateur d&#39;entrer un entier jusqu&#39;à ce qu&#39;une entrée valide soit fournie.</span></tt>
+               class="code sev- "><tt><i>90</i> &nbsp;</tt>
             </div>
             <div id="l91"
+               class="code sev- "><tt><i>91</i>     <span class="k">def</span> <span class="nf">get_valid_int_input</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prompt</span><span class="p">,</span> <span class="n">default_value</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span></tt>
+            </div>
+            <div id="l92"
+               class="code sev- "><tt><i>92</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l93"
+               class="code sev- "><tt><i>93</i> <span class="sd">        Demande à l&#39;utilisateur d&#39;entrer un entier jusqu&#39;à ce qu&#39;une entrée valide soit fournie.</span></tt>
+            </div>
+            <div id="l94"
                class="code sev-2  le">
                <ul class="violations">
                
                   <li>
                      <span class="count sev-2">
-                        E501
+                        W291
                      </span>
-                     Line too long (111 > 109 characters)</li>
+                     Trailing whitespace</li>
                
-               </ul><tt><i>91</i> <span class="sd">        Si l&#39;utilisateur n&#39;entre rien et qu&#39;une valeur par défaut est fournie, renvoie cette valeur par défaut.</span></tt>
-            </div>
-            <div id="l92"
-               class="code sev- "><tt><i>92</i> &nbsp;</tt>
-            </div>
-            <div id="l93"
-               class="code sev- "><tt><i>93</i> <span class="sd">        Args:</span></tt>
-            </div>
-            <div id="l94"
-               class="code sev- "><tt><i>94</i> <span class="sd">            prompt (str): L&#39;invite affichée à l&#39;utilisateur.</span></tt>
+               </ul><tt><i>94</i> <span class="sd">        Si l&#39;utilisateur n&#39;entre rien et qu&#39;une valeur par défaut est fournie, </span></tt>
             </div>
             <div id="l95"
-               class="code sev- "><tt><i>95</i> <span class="sd">            default_value (int, optional): Valeur par défaut à retourner si l&#39;utilisateur n&#39;entre rien.</span></tt>
+               class="code sev- "><tt><i>95</i> <span class="sd">        renvoie cette valeur par défaut.</span></tt>
             </div>
             <div id="l96"
                class="code sev- "><tt><i>96</i> &nbsp;</tt>
             </div>
             <div id="l97"
-               class="code sev- "><tt><i>97</i> <span class="sd">        Returns:</span></tt>
+               class="code sev- "><tt><i>97</i> <span class="sd">        Args:</span></tt>
             </div>
             <div id="l98"
-               class="code sev- "><tt><i>98</i> <span class="sd">            int: Entier valide entré par l&#39;utilisateur ou valeur par défaut si fournie.</span></tt>
+               class="code sev- "><tt><i>98</i> <span class="sd">            prompt (str): L&#39;invite affichée à l&#39;utilisateur.</span></tt>
             </div>
             <div id="l99"
-               class="code sev- "><tt><i>99</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>99</i> <span class="sd">            default_value (int, optional): Valeur par défaut à retourner si l&#39;utilisateur n&#39;entre rien.</span></tt>
             </div>
             <div id="l100"
-               class="code sev- "><tt><i>100</i>         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>100</i> &nbsp;</tt>
             </div>
             <div id="l101"
-               class="code sev- "><tt><i>101</i>             <span class="n">input_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>101</i> <span class="sd">        Returns:</span></tt>
             </div>
             <div id="l102"
-               class="code sev- "><tt><i>102</i>             <span class="k">if</span> <span class="n">input_string</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="ow">and</span> <span class="n">default_value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>102</i> <span class="sd">            int: Entier valide entré par l&#39;utilisateur ou valeur par défaut si fournie.</span></tt>
             </div>
             <div id="l103"
-               class="code sev- "><tt><i>103</i>                 <span class="k">return</span> <span class="n">default_value</span></tt>
+               class="code sev- "><tt><i>103</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
             </div>
             <div id="l104"
-               class="code sev- "><tt><i>104</i>             <span class="k">elif</span> <span class="n">input_string</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span></tt>
+               class="code sev- "><tt><i>104</i>         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span></tt>
             </div>
             <div id="l105"
-               class="code sev- "><tt><i>105</i>                 <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>105</i>             <span class="n">input_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span></tt>
             </div>
             <div id="l106"
-               class="code sev- "><tt><i>106</i>             <span class="k">else</span><span class="p">:</span></tt>
+               class="code sev- "><tt><i>106</i>             <span class="k">if</span> <span class="n">input_string</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="ow">and</span> <span class="n">default_value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span></tt>
             </div>
             <div id="l107"
-               class="code sev- "><tt><i>107</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entrée invalide, veuillez entrer un caractère numérique.&quot;</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>107</i>                 <span class="k">return</span> <span class="n">default_value</span></tt>
+            </div>
+            <div id="l108"
+               class="code sev- "><tt><i>108</i>             <span class="k">elif</span> <span class="n">input_string</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span></tt>
+            </div>
+            <div id="l109"
+               class="code sev- "><tt><i>109</i>                 <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span></tt>
+            </div>
+            <div id="l110"
+               class="code sev- "><tt><i>110</i>             <span class="k">else</span><span class="p">:</span></tt>
+            </div>
+            <div id="l111"
+               class="code sev- "><tt><i>111</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entrée invalide, veuillez entrer un caractère numérique.&quot;</span><span class="p">)</span></tt>
             </div>
             
          </div>
